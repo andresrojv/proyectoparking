@@ -1,0 +1,116 @@
+/* cliente/src/App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6;
+}
+
+main {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #282c34;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 10px;
+}
+
+/* Estilos de Cupos Disponibles */
+.cupos-list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.cupo-item h3 {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+.cupo-item p {
+  margin-top: 5px;
+  font-size: 1.5em;
+}
+.cupo-item span {
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 1.8em;
+}
+
+/* Estilos de Formulario de Reserva */
+.reserva-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.reserva-form label {
+  font-weight: bold;
+}
+.reserva-form select, .reserva-form button {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.reserva-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.reserva-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos de Tarifas */
+.tarifas-list {
+  list-style: none;
+  padding: 0;
+}
+.tarifas-list li {
+  padding: 8px 0;
+  font-size: 1.1em;
+  border-bottom: 1px solid #eee;
+}
+/* cliente/src/App.css */
+/* Estilos de Mis Reservas */
+.reservas-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reservas-list li {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+/* Estilos de Medios de Pago */
+.medios-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1em;
+}
